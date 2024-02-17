@@ -1,0 +1,11 @@
+{
+  "name": "chesql",
+  "version": "1.0.0",
+  "description": "js library for checking raw sql syntax in string variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Belz",
+  "license": "ISC"
+}
