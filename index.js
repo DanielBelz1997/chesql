@@ -37,6 +37,24 @@ function chesql(sqlStatement) {
         .filter((x) => x)
         .map((x) => x + " ")}`,
     };
+  } else if (
+    !sqlStatement.toLowerCase().includes("from") &&
+    !sqlStatement.toLowerCase().includes("update") &&
+    !sqlStatement.toLowerCase().includes("select")
+  ) {
+    return {
+      success: false,
+      message: `what about a from in youre select statement?`,
+    };
+  }
+  if (
+    !sqlStatement.toLowerCase().includes("from") &&
+    !sqlStatement.toLowerCase().includes("select")
+  ) {
+    return {
+      success: false,
+      message: `what about a from?`,
+    };
   } else {
     return {
       success: true,

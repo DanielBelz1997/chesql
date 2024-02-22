@@ -1,5 +1,5 @@
 const chesql = require("./index");
 
-const query = "SELECT * from me";
+const query = "SELECT * me";
 const result = chesql(query);
 console.log(result);
